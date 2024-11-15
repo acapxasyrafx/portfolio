@@ -1,8 +1,11 @@
-"use client"
+"use client";
 import { useEffect } from 'react';
 
-const GlowCard = ({ children , identifier}) => {
+const GlowCard = ({ children, identifier }) => {
   useEffect(() => {
+    // Ensure document access only on the client
+    if (typeof document === "undefined") return;
+
     const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
     const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
 
@@ -23,7 +26,7 @@ const GlowCard = ({ children , identifier}) => {
           event?.x > CARD_BOUNDS.left - CONFIG.proximity &&
           event?.x < CARD_BOUNDS.left + CARD_BOUNDS.width + CONFIG.proximity &&
           event?.y > CARD_BOUNDS.top - CONFIG.proximity &&
-          event?.y < CARD_BOUNDS.top + CARD_BOUNDS.height + CONFIG.proximity
+          event?.y < CARD_BOUNDS.top + CONFIG.proximity
         ) {
           CARD.style.setProperty('--active', 1);
         } else {
@@ -49,13 +52,15 @@ const GlowCard = ({ children , identifier}) => {
     document.body.addEventListener('pointermove', UPDATE);
 
     const RESTYLE = () => {
-      CONTAINER.style.setProperty('--gap', CONFIG.gap);
-      CONTAINER.style.setProperty('--blur', CONFIG.blur);
-      CONTAINER.style.setProperty('--spread', CONFIG.spread);
-      CONTAINER.style.setProperty(
-        '--direction',
-        CONFIG.vertical ? 'column' : 'row'
-      );
+      if (CONTAINER) {
+        CONTAINER.style.setProperty('--gap', CONFIG.gap);
+        CONTAINER.style.setProperty('--blur', CONFIG.blur);
+        CONTAINER.style.setProperty('--spread', CONFIG.spread);
+        CONTAINER.style.setProperty(
+          '--direction',
+          CONFIG.vertical ? 'column' : 'row'
+        );
+      }
     };
 
     RESTYLE();
