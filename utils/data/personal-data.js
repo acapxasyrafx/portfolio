@@ -6,12 +6,12 @@ export const personalData = {
   email: 'acapxasyrafx@yahoo.com',
   phone: '+60132050638',
   address: ' Sungai Buloh, Selangor Darul Ehsan, Malaysia ',
-  github: 'https://github.com/said7388',
-  facebook: 'https://www.facebook.com/abusaid.riyaz/',
-  linkedIn: 'https://www.linkedin.com/in/abu-said-bd/',
-  twitter: 'https://twitter.com/said7388',
-  stackOverflow: 'https://stackoverflow.com/users/16840768/abu-said',
-  leetcode: "https://leetcode.com/said3812/",
+  github: 'https://github.com/acapxasyraf',
+  facebook: 'https://www.facebook.com/AcapXasyraF/',
+  linkedIn: 'https://www.linkedin.com/in/acapxasyraf/',
+  twitter: 'https://twitter.com/acapxasyraf',
+  stackOverflow: 'https://stackoverflow.com/users/7941565/acap-xasyraf',
+  leetcode: "https://leetcode.com/acapxasyraf/",
   devUsername: "acapxasyrafx@yahoo.com",
-  resume: "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing"
+  resume: "https://drive.google.com/file/d/1v3-f5w0h38Hf7NVHsQTr3E6BQVwwDKPL/view?usp=sharing"
 }
