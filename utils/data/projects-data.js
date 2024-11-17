@@ -13,6 +13,7 @@ export const projectsData = [
         code: '',
         demo: '',
         image: crefin,
+        exclusive: false,
     },
     {
         id: 2,
@@ -23,6 +24,7 @@ export const projectsData = [
         code: '',
         demo: '',
         image: travel,
+        exclusive: false,
     },
     {
         id: 3,
@@ -33,6 +35,7 @@ export const projectsData = [
         role: 'Software Engineer',
         demo: '',
         image: realEstate,
+        exclusive: false,
     },
     {
         id: 4,
@@ -43,6 +46,7 @@ export const projectsData = [
         demo: '',
         image: ayla,
         role: 'Software Engineer',
+        exclusive: false,
     },
     {
         id: 5,
@@ -53,6 +57,7 @@ export const projectsData = [
         demo: '',
         image: ayla,
         role: 'Software Engineer',
+        exclusive: true,
     },
     {
         id: 6,
@@ -63,6 +68,7 @@ export const projectsData = [
         demo: '',
         image: ayla,
         role: 'Programmer',
+        exclusive: true,
     },
     {
         id: 7,
@@ -73,6 +79,7 @@ export const projectsData = [
         demo: '',
         image: ayla,
         role: 'Full Stack Developer',
+        exclusive: false,
     },
     {
         id: 8,
@@ -83,6 +90,7 @@ export const projectsData = [
         demo: '',
         image: ayla,
         role: 'Full Stack Developer',
+        exclusive: false,
     },
     {
         id: 9,
@@ -93,6 +101,7 @@ export const projectsData = [
         demo: '',
         image: ayla,
         role: 'Full Stack Developer',
+        exclusive: false,
     },
     {
         id: 10,
@@ -103,6 +112,7 @@ export const projectsData = [
         demo: '',
         image: ayla,
         role: 'Full Stack Developer',
+        exclusive: true,
     },
     {
         id: 11,
@@ -113,6 +123,7 @@ export const projectsData = [
         demo: '',
         image: ayla,
         role: 'Full Stack Developer',
+        exclusive: true,
     }
 ];
 

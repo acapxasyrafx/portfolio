@@ -2,6 +2,9 @@ import { projectsData } from '@/utils/data/projects-data';
 import ProjectCard from './project-card';
 
 const Projects = () => {
+  const latestProjects = [...projectsData]
+  .filter((project) => project.exclusive)
+  .sort((a, b) => b.id - a.id);
 
   return (
     <div id='projects' className="relative z-50  my-12 lg:my-24">
@@ -17,7 +20,7 @@ const Projects = () => {
 
       <div className="pt-24">
         <div className="flex flex-col gap-6">
-          {projectsData.slice(0, 4).map((project, index) => (
+          {latestProjects.slice(0, 4).map((project, index) => (
             <div
               id={`sticky-card-${index + 1}`}
               key={index}
